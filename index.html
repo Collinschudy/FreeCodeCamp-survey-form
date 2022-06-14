@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<!-- <img class="background-img" src="images\survey-background.jpg" alt=""> -->
+<body>
+    <div class="container">
+    <div class="top-text">
+        <h1 id="title">Collinschudy Codehub</h1>
+        <p id="description">Thank you for partaking in this survey, we really appreciate you!</p>
+
+    </div>
+    
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Full name</label>
+            <input type="text" id="name" class="form-ctrl" placeholder="Enter your full name...">
+        </div>
+
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" class="form-ctrl" placeholder="Enter your email..." required>
+
+        </div>
+        <div class="form-group">
+            <label for="age" id="number-label">Age <span class="clue">(optional)</span></label>
+            <input type="number" min="10" max="99" id="number" class="form-ctrl" placeholder="Enter your age">
+
+        </div>
+        <div class="form-group">
+            <p>Which of the following level best describes your tech journey?</p>
+            <select name="level" id="dropbox" class="form-control" required>
+                <option class="disabled" disabled selected value>select an option</option>
+                <option value="Newbie">Newbie</option>
+                <option value="Junior">Junior</option>
+                <option value="Intermediate">Intermediate</option>
+            </select>
+
+        </div>
+        <div class="form-group">
+            <p>How consistent are you in using Collinschudy codehub?</p>
+            <label><input type="radio" class="input-radio" name="user-consistency" value="Everyday" checked>Everyday</label>
+            <label><input type="radio" class="input-radio" name="user-consistency" value="Every-other-day">Every other day</label>
+            <label><input type="radio" class="input-radio" name="user-consistency" value="Twice-a-week">Twice a week</label>
+            <label><input type="radio" class="input-radio" name="user-consistency" value="Never">Never</label>
+        </div>
+
+        <div class="form-group">
+            <p>Which of our feature interests you the most?</p>
+            <select name="favorite" id="favorite" class="form-control" required>
+            <option class="disabled" disabled selected value>select an option</option>
+            <option  class="able" value="forum">Forums</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <p>What would you like to see improved in our services? <span class="clue">(check all that apply)</span></p>
+            <label><input type="checkbox" value="Front-end" name="improved" class="check-improve"/> Front-end projects</label>
+				<label><input type="checkbox" value="Back-end" name="improved" class="check-improve">Back-end projects</label>
+				<label><input type="checkbox" value="Challenges" name="improved" class="check-improve">Challenges</label>
+				<label><input type="checkbox" value="open-source-community" name="improved" class="check-improve">Open source community</label>
+				<label><input type="checkbox" value="videos" name="improved" class="check-improve">Videos</label>
+				<label><input type="checkbox" value="forum" name="improved" class="check-improve">Forum</label>
+				<label><input type="checkbox" value="add-courses" name="improved" class="check-improve">Additional courses</label>
+        </div>
+
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        
+    </div>
+        
+
+    </form>
+
+</body>
+
+</html>
